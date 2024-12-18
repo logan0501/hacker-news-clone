@@ -24,7 +24,7 @@ export default function Navbar() {
             height={18}
           />
         </li>
-        <li>
+        <li className={styles.navItem}>
           <Link
             href={NAV_ROUTES.HOME}
             className={clsx({

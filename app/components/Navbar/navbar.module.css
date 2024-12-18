@@ -12,7 +12,7 @@
   align-items: center;
   gap: 0.8rem;
 
-  li {
+  .navItem {
     border-right: solid 0.1rem black;
     padding-right: 1rem;
   }
@@ -21,7 +21,7 @@
     color: white;
   }
 
-  li:last-child {
+  .navItem:last-child {
     border-right: none;
   }
 }

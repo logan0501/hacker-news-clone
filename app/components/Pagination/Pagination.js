@@ -24,7 +24,9 @@ export default function Pagination({ totalPages }) {
   return (
     <div className={styles.paginationContainer}>
       <Link href={createPageURL(currentPage - 1)}>
-        <button disabled={currentPage <= 1}>Prev</button>
+        <button disabled={currentPage <= 1} className={styles.pageBtn}>
+          Prev
+        </button>
       </Link>
       {pages.map((page) =>
         page === "..." ? (
@@ -33,7 +35,10 @@ export default function Pagination({ totalPages }) {
           <Link href={createPageURL(page)} key={page}>
             <button
               onClick={() => createPageURL(page)}
-              className={clsx({ [styles.selected]: currentPage === page })}
+              className={clsx(
+                { [styles.selected]: currentPage === page },
+                styles.pageBtn
+              )}
             >
               {page}
             </button>
@@ -41,7 +46,9 @@ export default function Pagination({ totalPages }) {
         )
       )}
       <Link href={createPageURL(currentPage + 1)}>
-        <button disabled={currentPage >= totalPages}>Next</button>
+        <button disabled={currentPage >= totalPages} className={styles.pageBtn}>
+          Next
+        </button>
       </Link>
     </div>
   );
