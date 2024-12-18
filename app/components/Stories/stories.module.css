@@ -1,0 +1,16 @@
+.storyItem {
+  padding: 1rem;
+}
+
+.storyTitle {
+  font-size: 1.4rem;
+}
+
+.storyDomain {
+  color: var(--grey);
+  font-size: 1.2rem;
+}
+
+.storySubtitle {
+  color: var(--grey);
+}

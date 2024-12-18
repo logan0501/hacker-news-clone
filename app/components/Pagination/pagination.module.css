@@ -1,0 +1,22 @@
+.paginationContainer {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    padding: 0.8rem;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+    outline: none;
+    background-color: white;
+    border: 0.1rem solid black;
+    cursor: pointer;
+  }
+
+  button.selected {
+    background-color: var(--orange);
+    outline: none;
+    color: white;
+  }
+}
